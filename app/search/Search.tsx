@@ -7,7 +7,7 @@ function Search() {
   const [search, setSearch] = useState("");
   const router = useRouter();
 
-  const handleSearch = async (e: FormEvent<HTMLFontElement>) => {
+  const handleSearch = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSearch("");
     router.push(`/search/${search}`);
